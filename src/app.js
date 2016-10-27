@@ -1,3 +1,4 @@
-/**
- * Created by maxim on 10/27/16.
- */
+"use strict";
+let a = 5;
+
+;

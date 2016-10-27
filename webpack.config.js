@@ -6,6 +6,17 @@ module.exports = {
     entry: './src/app.js',
     output: {
         filename: 'build.js',
-        path: './built'
+        path: './dist'
+    },
+    watch: true,
+    module: {
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: "babel?presets[]=es2015",
+                exclude: /(node_modules|bower_components)/
+            }
+        ]
     }
+
 };
